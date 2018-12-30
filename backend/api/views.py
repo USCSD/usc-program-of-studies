@@ -46,3 +46,11 @@ class class_list(generics.ListCreateAPIView):
 class class_detail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Class.objects.all()
     serializer_class = ClassSerializer
+
+class career_list(generics.ListCreateAPIView):
+    queryset = Career.objects.all()
+    serializer_class = CareerSerializer
+
+class career_detail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Career.objects.all()
+    serializer_class = CareerSerializer
