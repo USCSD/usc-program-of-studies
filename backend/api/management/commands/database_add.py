@@ -22,7 +22,7 @@ class Command(BaseCommand):
             a_career.description = line[1].replace(";",",")
             a_career.career_pathways = line[2]
             a_career.save()
-        master = open("programofstudies1.txt", "r", encoding="utf8")
+        master = open("programofstudiesfinal.txt", "r", encoding="utf8")
         for line in master:
             line = line.split(',')
             a_class = Class()
@@ -74,13 +74,13 @@ class Command(BaseCommand):
                 marketing.suggested_classes.add(a_class)
                 careers.append('Marketing')
             if line[20] =='x':
-                health_services = Career.objects.get(career_name = 'health services')
+                health_services = Career.objects.get(career_name = 'Health Services')
                 health_services.suggested_classes.add(a_class)
-                careers.append('health services')
+                careers.append('Health Services')
             if line[21] =='x':
-                temp = Career.objects.get(career_name = 'education and training')
+                temp = Career.objects.get(career_name = 'Education and Training')
                 temp.suggested_classes.add(a_class)
-                careers.append('education and training')
+                careers.append('Education and Training')
             if line[22] =='x':
                 temp = Career.objects.get(career_name = 'Government and Public Administration')
                 temp.suggested_classes.add(a_class)

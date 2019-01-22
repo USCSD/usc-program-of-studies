@@ -94,9 +94,24 @@
           <router-link
             class="button is-fullwidth is-large"
             to="/list"
+            style="margin-bottom:20px"
           >
             <div class="container has-text-centered">
-              To the Class List!
+              Click this button for a complete class list
+              <span class="icon is-pulled-right">
+                <i
+                  class="fa fa-arrow-right"
+                  aria-hidden="true"
+                ></i>
+              </span></div>
+
+          </router-link>
+          <router-link
+            class="button is-fullwidth is-large"
+            to="/careers"
+          >
+            <div class="container has-text-centered">
+              Click this button for career options
               <span class="icon is-pulled-right">
                 <i
                   class="fa fa-arrow-right"
