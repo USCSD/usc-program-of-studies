@@ -5,6 +5,8 @@ import List from './views/List.vue';
 import Detail from './views/Detail.vue';
 import CareerHome from './views/CareerHome.vue';
 import CareerDetail from './views/CareerDetail.vue';
+import InfoDetail from './views/InfoDetail.vue';
+import InfoList from './views/InfoList.vue';
 
 Vue.use(Router)
 
@@ -35,6 +37,17 @@ export default new Router({
       path: '/careers/:id',
       name: 'careerdetail',
       component: CareerDetail,
+      props: true
+    },
+    {
+      path: '/info',
+      name: 'infolist',
+      component: InfoList
+    },
+    {
+      path: '/info/:id',
+      name: 'infodetail',
+      component: InfoDetail,
       props: true
     }
   ]

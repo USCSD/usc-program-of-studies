@@ -59,7 +59,7 @@
                         role="menu"
                       >
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="9th"
@@ -71,7 +71,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="10th"
@@ -83,7 +83,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="11th"
@@ -95,7 +95,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="12th"
@@ -132,7 +132,7 @@
                         role="menu"
                       >
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="English"
@@ -144,7 +144,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="Science"
@@ -156,7 +156,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="Social Studies"
@@ -168,7 +168,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="Mathematics"
@@ -180,63 +180,15 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
-                              id="World Languages"
-                              value="subject=World Languages"
+                              id="Electives"
+                              value="subject=Electives"
                               v-model="checkedBoxes"
                               @change="filter"
                             >
-                            <label for="World Languages"> World Languages</label>
-                          </div>
-                        </div>
-                        <div class="dropdown-content">
-                          <div style="padding-left:20px">
-                            <input
-                              type="checkbox"
-                              id="Music Instrumental"
-                              value="subject=Music Instrumental"
-                              v-model="checkedBoxes"
-                              @change="filter"
-                            >
-                            <label for="Music Instrumental"> Music Instrumental</label>
-                          </div>
-                        </div>
-                        <div class="dropdown-content">
-                          <div style="padding-left:20px">
-                            <input
-                              type="checkbox"
-                              id="Music Vocal"
-                              value="subject=Music Vocal"
-                              v-model="checkedBoxes"
-                              @change="filter"
-                            >
-                            <label for="Music Vocal"> Music Vocal</label>
-                          </div>
-                        </div>
-                        <div class="dropdown-content">
-                          <div style="padding-left:20px">
-                            <input
-                              type="checkbox"
-                              id="Wellness Education"
-                              value="subject=Wellness Education"
-                              v-model="checkedBoxes"
-                              @change="filter"
-                            >
-                            <label for="Wellness Education"> Wellness Education</label>
-                          </div>
-                        </div>
-                        <div class="dropdown-content">
-                          <div style="padding-left:20px">
-                            <input
-                              type="checkbox"
-                              id="Interdisciplinary Opportunities"
-                              value="subject=Interdisciplinary Opportunities"
-                              v-model="checkedBoxes"
-                              @change="filter"
-                            >
-                            <label for="Interdisciplinary Opportunities"> Interdisciplinary Opportunities</label>
+                            <label for="Electives"> Electives</label>
                           </div>
                         </div>
                       </div>
@@ -265,7 +217,7 @@
                         role="menu"
                       >
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="AP"
@@ -277,7 +229,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="Honors"
@@ -289,19 +241,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
-                            <input
-                              type="checkbox"
-                              id="MYP"
-                              value="qualification=MYP"
-                              v-model="checkedBoxes"
-                              @change="filter"
-                            >
-                            <label for="MYP"> Middle Years Program(MYP)</label>
-                          </div>
-                        </div>
-                        <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="IB Diploma"
@@ -310,18 +250,6 @@
                               @change="filter"
                             >
                             <label for="IB Diploma"> IB Diploma</label>
-                          </div>
-                        </div>
-                        <div class="dropdown-content">
-                          <div style="padding-left:20px">
-                            <input
-                              type="checkbox"
-                              id="Global Fluency"
-                              value="qualification=Global Fluency"
-                              v-model="checkedBoxes"
-                              @change="filter"
-                            >
-                            <label for="Global Fluency"> Global Fluency</label>
                           </div>
                         </div>
                       </div>
@@ -350,7 +278,7 @@
                         role="menu"
                       >
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="year"
@@ -362,7 +290,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="semester"
@@ -384,7 +312,7 @@
                           aria-haspopup="true"
                           aria-controls="dropdown-menu4"
                         >
-                          <span>Number of Credits</span>
+                          <span>Credits Per Semester</span>
                           <span class="icon is-small">
                             <i
                               class="fa fa-caret-down"
@@ -399,7 +327,7 @@
                         role="menu"
                       >
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="half credit"
@@ -411,7 +339,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:20px">
+                          <div style="padding-left:5px">
                             <input
                               type="checkbox"
                               id="1 credit"
@@ -420,18 +348,6 @@
                               @change="filter"
                             >
                             <label for="1 credits"> 1</label>
-                          </div>
-                        </div>
-                        <div class="dropdown-content">
-                          <div style="padding-left:20px">
-                            <input
-                              type="checkbox"
-                              id="2 credits"
-                              value="credits=2"
-                              v-model="checkedBoxes"
-                              @change="filter"
-                            >
-                            <label for="2 credits"> 2</label>
                           </div>
                         </div>
                       </div>

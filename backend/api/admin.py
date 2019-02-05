@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Class, Career
+from .models import Class, Career,Info
 
 # Register your models here.
 
@@ -11,3 +11,4 @@ class ClassAdmin(admin.ModelAdmin):
 
 admin.site.register(Class,ClassAdmin)
 admin.site.register(Career)
+admin.site.register(Info)

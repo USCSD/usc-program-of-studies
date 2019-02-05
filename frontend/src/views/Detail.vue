@@ -48,6 +48,7 @@
                       <th>Grade Levels</th>
                       <th>Weighted</th>
                       <th>Qualifications</th>
+                      <th>Mods Per Week</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -57,6 +58,7 @@
                       <td>{{class_detail.grade}}</td>
                       <td>{{class_detail.weighted}}</td>
                       <td>{{class_detail.qualifications}}</td>
+                      <td>{{class_detail.mods}}</td>
                     </tr>
                   </tbody>
                 </table>

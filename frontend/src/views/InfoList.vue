@@ -34,28 +34,14 @@
         <div class="card">
           <div class="card-content">
             <div class="box">
-              <h1 class="title is-3">Career Clusters</h1>
-              <p
-                class="subtitle is-5"
-                style="padding-top:15px"
-              >The Career Cluster initiative is coordinated by the National Association of State Directors of Career Technical Education Consortium. Career Clusters provide 16 groupings of occupations and associated career pathways that help students explore similarly grouped career options. The Career Cluster is an organization tool that helps students navigate their way to greater success in college and career. <strong>Click on one of the boxes below to get more information about the Cluster and a list of classes that fit under it.</strong></p>
-            </div>
-            <div class="columns">
-              <template v-for="n in 4">
-                <div :key="n">
-                  <div class="column">
-                    <div
-                      class="box"
-                      v-for="index in 4"
-                      :key="index"
-                    >
-                      <h1 class="subtitle is-5">
-                        <router-link :to="{name:'careerdetail',params:{id:careers[4*(n-1)+(index-1)].id}}">{{careers[4*(n-1)+(index-1)].career_name}}</router-link>
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-              </template>
+              <h1 class="title is-2">General Information</h1>
+              <div
+                class="box"
+                v-for="info in info"
+                :key="info.id"
+              >
+                <router-link :to="{name:'infodetail',params:{id:info.id}}">{{info.info_name}}</router-link>
+              </div>
             </div>
           </div>
         </div>
@@ -68,10 +54,10 @@
 import axios from 'axios'
 
 export default {
-  name: 'CareerHome',
+  name: 'infolist',
   data: function () {
     return {
-      careers: []
+      info: []
     }
   },
   created: function () {
@@ -80,9 +66,9 @@ export default {
     var self = this
 
     axios
-      .get('/api/careers/?format=json')
+      .get('/api/info/?format=json')
       .then(function (response) {
-        self.careers = response.data
+        self.info = response.data
       })
       .catch(function (error) {
         // if an error occurs, print that error

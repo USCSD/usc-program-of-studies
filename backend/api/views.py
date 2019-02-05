@@ -40,7 +40,7 @@ class class_list(generics.ListCreateAPIView):
         return queryset
 
     filter_backends = (filters.SearchFilter,)
-    search_fields = ('class_name', 'career')
+    search_fields = ('class_name', 'credits')
 
 
 class class_detail(generics.RetrieveUpdateDestroyAPIView):
@@ -54,3 +54,11 @@ class career_list(generics.ListCreateAPIView):
 class career_detail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Career.objects.all()
     serializer_class = CareerSerializer
+
+class info_list(generics.ListCreateAPIView):
+    queryset = Info.objects.all()
+    serializer_class = InfoSerializer
+
+class info_detail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Info.objects.all()
+    serializer_class = InfoSerializer

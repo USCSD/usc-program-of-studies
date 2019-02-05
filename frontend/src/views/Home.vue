@@ -109,9 +109,24 @@
           <router-link
             class="button is-fullwidth is-large"
             to="/careers"
+            style="margin-bottom:20px"
           >
             <div class="container has-text-centered">
-              Click this button for career options
+              Click this button for career clusters
+              <span class="icon is-pulled-right">
+                <i
+                  class="fa fa-arrow-right"
+                  aria-hidden="true"
+                ></i>
+              </span></div>
+
+          </router-link>
+          <router-link
+            class="button is-fullwidth is-large"
+            to="/info"
+          >
+            <div class="container has-text-centered">
+              Click this button for general information
               <span class="icon is-pulled-right">
                 <i
                   class="fa fa-arrow-right"
