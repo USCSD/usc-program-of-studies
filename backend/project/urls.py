@@ -18,3 +18,6 @@ urlpatterns = [
                 extra_context={ "ENV_NAME": settings.ENV_NAME }),
             name="app")
 ]
+admin.site.site_header= "Program of Studies Administration"
+admin.site.index_title= ""
+admin.site.site_url= "/app"

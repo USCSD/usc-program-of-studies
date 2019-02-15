@@ -41,16 +41,16 @@
               >The Career Cluster initiative is coordinated by the National Association of State Directors of Career Technical Education Consortium. Career Clusters provide 16 groupings of occupations and associated career pathways that help students explore similarly grouped career options. The Career Cluster is an organization tool that helps students navigate their way to greater success in college and career. <strong>Click on one of the boxes below to get more information about the Cluster and a list of classes that fit under it.</strong></p>
             </div>
             <div class="columns">
-              <template v-for="n in 4">
+              <template v-for="n in 2">
                 <div :key="n">
                   <div class="column">
                     <div
                       class="box"
-                      v-for="index in 4"
+                      v-for="index in 8"
                       :key="index"
                     >
                       <h1 class="subtitle is-5">
-                        <router-link :to="{name:'careerdetail',params:{id:careers[4*(n-1)+(index-1)].id}}">{{careers[4*(n-1)+(index-1)].career_name}}</router-link>
+                        <router-link :to="{name:'careerdetail',params:{id:careers[8*(n-1)+(index-1)].id}}">{{careers[8*(n-1)+(index-1)].career_name}}</router-link>
                       </h1>
                     </div>
                   </div>

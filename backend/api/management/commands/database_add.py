@@ -22,7 +22,7 @@ class Command(BaseCommand):
             a_career.description = line[1].replace(";",",")
             a_career.career_pathways = line[2]
             a_career.save()
-        master = open("POS.txt", "r", encoding="utf8")
+        master = open("POSfinal.txt", "r", encoding="utf8")
         for line in master:
             line = line.split(',')
             a_class = Class()

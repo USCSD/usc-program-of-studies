@@ -70,10 +70,6 @@
           <div class="navbar-menu">
             <!-- navbar start, navbar end -->
             <div class="navbar-end">
-              <a
-                class="navbar-item"
-                href="/about"
-              >About</a>
               <a class="navbar-item">
                 <router-link to="/list">Class List</router-link>
               </a>
@@ -83,13 +79,28 @@
       </div>
 
       <!-- Hero content: will be in the middle -->
-      <div class="hero-body">
+      <div
+        class="hero-body"
+        style="margin-bottom:50px"
+      >
         <div class="container has-text-centered">
+          <img
+            style="margin-bottom:25px"
+            src="~__SHARED_STATIC__/usclogo.png"
+            width="250"
+            height="400"
+          >
           <h1 class="title">
             Welcome to the Upper Saint Clair Program of Studies!
           </h1>
           <h2 class="subtitle">
-            An interactive website for more information about the USC classes
+            An interactive website for more information about the USC classes. To download the PDF version of the Program of Studies,
+            <a
+              href="/static/FullProgramOfStudies.pdf"
+              download
+            >
+              <strong> click here</strong>
+            </a>
           </h2>
           <router-link
             class="button is-fullwidth is-large"

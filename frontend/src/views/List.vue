@@ -35,12 +35,13 @@
           <div class="card">
             <div class="card-content">
               <div class="box">
-                <div class="level">
-                  <div class="level-item">
+                <div class="buttons">
+                  <div class="control">
                     <div class="dropdown is-hoverable">
                       <div class="dropdown-trigger">
                         <button
                           class="button"
+                          style="margin-right: 10px"
                           aria-haspopup="true"
                           aria-controls="dropdown-menu4"
                         >
@@ -109,13 +110,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="level-item">
+                  <div class=control>
                     <div class="dropdown is-hoverable">
                       <div class="dropdown-trigger">
                         <button
                           class="button"
                           aria-haspopup="true"
                           aria-controls="dropdown-menu4"
+                          style="margin-right: 10px"
                         >
                           <span>Subject</span>
                           <span class="icon is-small">
@@ -194,13 +196,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="level-item">
+                  <div class=control>
                     <div class="dropdown is-hoverable">
                       <div class="dropdown-trigger">
                         <button
                           class="button"
                           aria-haspopup="true"
                           aria-controls="dropdown-menu4"
+                          style="margin-right: 10px"
                         >
                           <span>Qualifications</span>
                           <span class="icon is-small">
@@ -255,13 +258,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="level-item">
+                  <div class=control>
                     <div class="dropdown is-hoverable">
                       <div class="dropdown-trigger">
                         <button
                           class="button"
                           aria-haspopup="true"
                           aria-controls="dropdown-menu4"
+                          style="margin-right: 10px"
                         >
                           <span>Term Length</span>
                           <span class="icon is-small">
@@ -304,13 +308,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="level-item">
+                  <div class=control>
                     <div class="dropdown is-hoverable">
                       <div class="dropdown-trigger">
                         <button
                           class="button"
                           aria-haspopup="true"
                           aria-controls="dropdown-menu4"
+                          style="margin-right: 10px"
                         >
                           <span>Credits Per Semester</span>
                           <span class="icon is-small">

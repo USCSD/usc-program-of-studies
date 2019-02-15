@@ -35,13 +35,24 @@
           <div class="card-content">
             <div class="box">
               <h1 class="title is-2">General Information</h1>
-              <div
-                class="box"
-                v-for="info in info"
-                :key="info.id"
-              >
-                <router-link :to="{name:'infodetail',params:{id:info.id}}">{{info.info_name}}</router-link>
+              <div class="columns">
+                <template v-for="column in columns">
+                  <div :key="column.id">
+                    <div class="column">
+                      <div
+                        class="box"
+                        v-for="info in column"
+                        :key="info.id"
+                      >
+                        <h1 class="subtitle is-5">
+                          <router-link :to="{name:'infodetail',params:{id:info.id}}">{{info.info_name}}</router-link>
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                </template>
               </div>
+
             </div>
           </div>
         </div>
@@ -57,7 +68,8 @@ export default {
   name: 'infolist',
   data: function () {
     return {
-      info: []
+      info: [],
+      cols: 2
     }
   },
   created: function () {
@@ -74,6 +86,17 @@ export default {
         // if an error occurs, print that error
         console.log(error)
       })
+  },
+  computed: {
+    columns () {
+      let columns = []
+      let mid = Math.ceil(this.info.length / this.cols)
+      for (let col = 0; col < this.cols; col++) {
+        columns.push(this.info.slice(col * mid, col * mid + mid))
+      }
+      return columns
+    }
   }
 }
+
 </script>
