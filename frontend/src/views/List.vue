@@ -35,7 +35,7 @@
           <div class="card">
             <div class="card-content">
               <div class="box">
-                <div class="buttons">
+                <div class="buttons is-centered">
                   <div class="control">
                     <div class="dropdown is-hoverable">
                       <div class="dropdown-trigger">
@@ -190,7 +190,79 @@
                               v-model="checkedBoxes"
                               @change="filter"
                             >
-                            <label for="Electives"> Electives</label>
+                            <label for="Electives">Electives</label>
+                          </div>
+                        </div>
+                        <div class="dropdown-content">
+                          <div style="padding-left:5px">
+                            <input
+                              type="checkbox"
+                              id="World Language Electives"
+                              value="subject=World Language Electives"
+                              v-model="checkedBoxes"
+                              @change="filter"
+                            >
+                            <label for="World Language Electives"> World Language Electives</label>
+                          </div>
+                        </div>
+                        <div class="dropdown-content">
+                          <div style="padding-left:5px">
+                            <input
+                              type="checkbox"
+                              id="Technical and Practical Studies"
+                              value="subject=Technical and Practical Studies"
+                              v-model="checkedBoxes"
+                              @change="filter"
+                            >
+                            <label for="Technical and Practical Studies"> Technical and Practical Studies</label>
+                          </div>
+                        </div>
+                        <div class="dropdown-content">
+                          <div style="padding-left:5px">
+                            <input
+                              type="checkbox"
+                              id="Visual Arts Electives"
+                              value="subject=Visual Arts Electives"
+                              v-model="checkedBoxes"
+                              @change="filter"
+                            >
+                            <label for="Visual Arts Electives"> Visual Arts Electives</label>
+                          </div>
+                        </div>
+                        <div class="dropdown-content">
+                          <div style="padding-left:5px">
+                            <input
+                              type="checkbox"
+                              id="Music Electives"
+                              value="subject=Music Electives"
+                              v-model="checkedBoxes"
+                              @change="filter"
+                            >
+                            <label for="Music Electives"> Music Electives</label>
+                          </div>
+                        </div>
+                        <div class="dropdown-content">
+                          <div style="padding-left:5px">
+                            <input
+                              type="checkbox"
+                              id="Wellness Education"
+                              value="subject=Wellness Education"
+                              v-model="checkedBoxes"
+                              @change="filter"
+                            >
+                            <label for="Wellness Education"> Wellness Education</label>
+                          </div>
+                        </div>
+                        <div class="dropdown-content">
+                          <div style="padding-left:5px">
+                            <input
+                              type="checkbox"
+                              id="Interdisciplinary Opportunities Electives"
+                              value="subject=Interdisciplinary Opportunities Electives"
+                              v-model="checkedBoxes"
+                              @change="filter"
+                            >
+                            <label for="Interdisciplinary Opportunities Electives"> Interdisciplinary Opportunities Electives</label>
                           </div>
                         </div>
                       </div>

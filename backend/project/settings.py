@@ -71,6 +71,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'webpack_loader',
     'api',
+    'django_filters',
 ]
 
 MIDDLEWARE = [

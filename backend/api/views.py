@@ -4,7 +4,7 @@ from rest_framework import status, generics, mixins, filters
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django_filters.rest_framework import DjangoFilterBackend
-from .models import Class
+from .models import Class,Career,Info
 from .serializers import *
 # Create your views here.
 

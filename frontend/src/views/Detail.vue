@@ -67,7 +67,7 @@
                 <h1 class="title is-4">For More Information:</h1>
                 <iframe
                   v-if="getId!='error'"
-                  width="640"
+                  width="100%"
                   height="360"
                   :src=" getId "
                   frameborder="0"
