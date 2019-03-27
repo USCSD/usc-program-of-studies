@@ -53,70 +53,68 @@ class Command(BaseCommand):
             a_class.description = line[12].replace(";", ",")
             a_class.link = line[13]
             a_class.save()
-            careers = []
             if line[15] == 'X':
                 business = Career.objects.get(career_name = 'Business Management and Administration')
                 business.suggested_classes.add(a_class)
-                careers.append('Business Management and Administration')
+                a_class.careers.add(business)
             if line[16] =='X':
                 finance = Career.objects.get(career_name = 'Finance')
                 finance.suggested_classes.add(a_class)
-                careers.append('Finance')
+                a_class.careers.add(finance)
             if line[17] =='X':
                 it = Career.objects.get(career_name = 'Information Technology')
                 it.suggested_classes.add(a_class)
-                careers.append('Information Technology')
+                a_class.careers.add(it)
             if line[18] =='X':
                 marketing = Career.objects.get(career_name = 'Marketing')
                 marketing.suggested_classes.add(a_class)
-                careers.append('Marketing')
+                a_class.careers.add(marketing)
             if line[28] =='X':
                 health_services = Career.objects.get(career_name = 'Health Services')
                 health_services.suggested_classes.add(a_class)
-                careers.append('Health Services')
+                a_class.careers.add(health_services)
             if line[23] =='X':
                 temp = Career.objects.get(career_name = 'Education and Training')
                 temp.suggested_classes.add(a_class)
-                careers.append('Education and Training')
+                a_class.careers.add(temp)
             if line[24] =='X':
                 temp = Career.objects.get(career_name = 'Government and Public Administration')
                 temp.suggested_classes.add(a_class)
-                careers.append('Government and Public Administration')
+                a_class.careers.add(temp)
             if line[25] =='X':
                 temp = Career.objects.get(career_name = 'Hospitality and Tourism')
                 temp.suggested_classes.add(a_class)
-                careers.append('Hospitality and Tourism')
+                a_class.careers.add(temp)
             if line[26] =='X':
                 temp = Career.objects.get(career_name = 'Human Services')
                 temp.suggested_classes.add(a_class)
-                careers.append('Human Services')
+                a_class.careers.add(temp)
             if line[27] =='X':
                 temp = Career.objects.get(career_name = 'Law, Public Safety, Corrections and Security')
                 temp.suggested_classes.add(a_class)
-                careers.append('Law, Public Safety, Corrections and Security')
+                a_class.careers.add(temp)
             if line[29] =='X':
                 temp = Career.objects.get(career_name = 'Agriculture, Food and Natural Services')
                 temp.suggested_classes.add(a_class)
-                careers.append('Agriculture, Food and Natural Services')
+                a_class.careers.add(temp)
             if line[14] =='X':
                 temp = Career.objects.get(career_name = 'Arts, A/V, and Communications')
                 temp.suggested_classes.add(a_class)
-                careers.append('Arts, A/V, and Communications')
+                a_class.careers.add(temp)
             if line[19] =='X':
                 temp = Career.objects.get(career_name = 'Architecture and Construction')
                 temp.suggested_classes.add(a_class)
-                careers.append('Architecture and Construction')
+                a_class.careers.add(temp)
             if line[20] =='X':
                 temp = Career.objects.get(career_name = 'Manufacturing')
                 temp.suggested_classes.add(a_class)
-                careers.append('Manufacturing')
+                a_class.careers.add(temp)
             if line[21] =='X':
                 temp = Career.objects.get(career_name = 'Transportation, Distribution and Logistics')
                 temp.suggested_classes.add(a_class)
-                careers.append('Transportation, Distribution and Logistics')
+                a_class.careers.add(temp)
             if line[22] =='X':
                 temp = Career.objects.get(career_name = 'Science, Technology, and Mathematics')
                 temp.suggested_classes.add(a_class)
-                careers.append('Science, Technology, and Mathematics')
-            a_class.careers = ",".join(careers)
+                a_class.careers.add(temp)
             a_class.save()

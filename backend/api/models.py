@@ -12,7 +12,7 @@ class Class(models.Model):
     subject = models.CharField(max_length=100)
     grade = models.CharField(max_length=100)
     qualification = models.CharField(max_length=250, blank = True)
-    careers = models.CharField(max_length=1000, blank=True)
+    careers = models.ManyToManyField('Career')
     description = models.CharField(max_length=5000, blank=True)
     prerequisite = models.CharField(max_length=250, blank=True)
     link = models.CharField(max_length=100, blank=True)
