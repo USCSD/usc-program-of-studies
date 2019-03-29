@@ -33,7 +33,10 @@
       >
         <div class="column is-8 is-offset-2">
           <div class="card">
-            <div class="card-content">
+            <div
+              v-if="class_detail && class_detail.class_name"
+              class="card-content"
+            >
               <div class="box has-text-centered ">
                 <h1 class="title is-3">{{class_detail.class_name}}</h1>
                 <p
@@ -91,7 +94,7 @@ export default {
   name: 'detail',
   data: function () {
     return {
-      class_detail: []
+      class_detail: null
     }
   },
 
@@ -100,7 +103,7 @@ export default {
       var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/
       var match = this.class_detail.link.match(regExp)
 
-      if (match && match[2].length == 11) {
+      if (match && match[2].length === 11) {
         return 'https://www.youtube.com/embed/' + match[2]
       } else {
         return 'error'
@@ -108,22 +111,21 @@ export default {
     }
   },
   created: function () {
-    console.log('detail::created') // useful for understanding the lifecycle
     var self = this
     axios
       .get('/api/classes/' + self.$route.params.id)
       .then(function (response) {
         self.class_detail = response.data
         if (
-          self.class_detail.qualifications == '' ||
+          self.class_detail.qualifications === '' ||
           self.class_detail.qualifications == null
         ) {
           self.class_detail.qualifications = 'None'
         }
-        if (self.class_detail.weighted == true) {
+        if (self.class_detail.weighted === true) {
           self.class_detail.weighted = 'Yes'
         }
-        if (self.class_detail.weighted == false) {
+        if (self.class_detail.weighted === false) {
           self.class_detail.weighted = 'No'
         }
       })

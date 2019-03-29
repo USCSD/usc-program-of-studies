@@ -501,8 +501,6 @@ export default {
     }
   },
   created: function () {
-    console.log('list::created') // useful for understanding the lifecycle
-
     var self = this
 
     axios

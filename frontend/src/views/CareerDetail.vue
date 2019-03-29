@@ -108,7 +108,6 @@ export default {
   },
 
   created: function () {
-    console.log('detail::created') // useful for understanding the lifecycle
     var self = this
     axios
       .get('/api/careers/' + self.$route.params.id)

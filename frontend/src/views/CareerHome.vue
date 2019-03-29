@@ -49,7 +49,10 @@
                       v-for="index in 8"
                       :key="index"
                     >
-                      <h1 class="subtitle is-5">
+                      <h1
+                        v-if="careers"
+                        class="subtitle is-5"
+                      >
                         <router-link :to="{name:'careerdetail',params:{id:careers[8*(n-1)+(index-1)].id}}">{{careers[8*(n-1)+(index-1)].career_name}}</router-link>
                       </h1>
                     </div>
@@ -71,12 +74,10 @@ export default {
   name: 'CareerHome',
   data: function () {
     return {
-      careers: []
+      careers: null
     }
   },
   created: function () {
-    console.log('list::created') // useful for understanding the lifecycle
-
     var self = this
 
     axios
