@@ -197,12 +197,12 @@
                           <div style="padding-left:5px">
                             <input
                               type="checkbox"
-                              id="World Language Electives"
-                              value="subject=World Language Electives"
+                              id="World Languages Electives"
+                              value="subject=World Languages Electives"
                               v-model="checkedBoxes"
                               @change="filter"
                             >
-                            <label for="World Language Electives"> World Language Electives</label>
+                            <label for="World Language Electives"> World Languages Electives</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -430,7 +430,6 @@
                       </div>
                     </div>
                   </div>
-
                 </div>
                 <div class="level">
                   <input
@@ -441,6 +440,14 @@
                     v-model='search_term'
                     v-on:keyup="filter"
                   >
+                </div>
+                <div class="level">
+                  <button
+                    class="button is-dark is-outlined is-fullwidth"
+                    @click="reset();filter()"
+                  >
+                    Click me to Reset Filters
+                  </button>
                 </div>
               </div>
               <table class="table is-fullwidth is-bordered">
@@ -500,12 +507,30 @@ export default {
       filters: '?'
     }
   },
-  created: function () {
+  mounted: function () {
+    if (localStorage.getItem('boxes')) {
+      try {
+        this.checkedBoxes = JSON.parse(localStorage.getItem('boxes'))
+      } catch (e) {
+        localStorage.removeItem('boxes')
+      }
+    }
+    if (localStorage.search_term) {
+      this.search_term = localStorage.search_term
+    }
     var self = this
-
+    var box
+    self.filters = '?'
+    for (box = 0; box < self.checkedBoxes.length; box++) {
+      self.filters = self.filters + String(self.checkedBoxes[box]) + '&'
+    }
+    if (this.search_term !== '' || this.search_term !== null) {
+      self.filters = self.filters + 'search=' + this.search_term
+    }
     axios
-      .get('/api/classes/?format=json')
+      .get('/api/classes/' + self.filters)
       .then(function (response) {
+        console.log('adding classes to data')
         self.classes = response.data
       })
       .catch(function (error) {
@@ -533,6 +558,14 @@ export default {
           // if an error occurs, print that error
           console.log(error)
         })
+      const parsed = JSON.stringify(this.checkedBoxes)
+      localStorage.setItem('boxes', parsed)
+      localStorage.search_term = this.search_term
+    },
+    reset: function () {
+      this.filters = '?'
+      this.checkedBoxes = []
+      this.search_term = ''
     }
   }
 }
