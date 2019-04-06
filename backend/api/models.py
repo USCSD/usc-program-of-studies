@@ -32,7 +32,7 @@ class Career(models.Model):
 
 class Info(models.Model):
     info_name = models.CharField(max_length=100)
-    file_name = models.CharField(max_length=500)
+    file_name = models.FileField()
 
     def __str__(self):
         return self.info_name

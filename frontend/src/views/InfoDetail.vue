@@ -37,7 +37,7 @@
               <h1 class="title is-3">{{info_detail.info_name}}</h1>
               <div>
                 <object
-                  :data="'/static/' + info_detail.file_name"
+                  :data="info_detail.file_name"
                   type="application/pdf"
                   width="100%"
                   height="600px"
@@ -46,7 +46,7 @@
                 </object>
               </div>
               <a
-                :href="'/static/' + info_detail.file_name"
+                :href="info_detail.file_name"
                 download
               >Click here to download the PDF file</a>
             </div>

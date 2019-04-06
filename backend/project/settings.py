@@ -179,3 +179,13 @@ WEBPACK_LOADER = {
             os.path.dirname(BASE_DIR), "frontend/webpack-stats.json")
     }
 }
+
+# -------------------------------------------------------------------------------
+# Media Files (PDFs)
+# -------------------------------------------------------------------------------
+
+# URL endpoint for accessing media files
+MEDIA_URL = '/media/'
+
+# Directory where media files will reside
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'backend/media')
