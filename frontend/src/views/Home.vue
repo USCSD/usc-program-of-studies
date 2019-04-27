@@ -60,7 +60,7 @@
             style="margin-bottom:20px"
           >
             <div class="container has-text-centered">
-              Click this button for a complete class list
+              Click here for a Complete Class List
               <span class="icon is-pulled-right">
                 <i
                   class="fa fa-arrow-right"
@@ -75,7 +75,7 @@
             style="margin-bottom:20px"
           >
             <div class="container has-text-centered">
-              Click this button for career clusters
+              Click here for Career Clusters
               <span class="icon is-pulled-right">
                 <i
                   class="fa fa-arrow-right"
@@ -89,7 +89,7 @@
             to="/info"
           >
             <div class="container has-text-centered">
-              Click this button for general information
+              Click here for General Information
               <span class="icon is-pulled-right">
                 <i
                   class="fa fa-arrow-right"
