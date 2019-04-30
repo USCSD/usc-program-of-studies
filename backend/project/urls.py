@@ -24,4 +24,4 @@ admin.site.index_title= ""
 admin.site.site_url= "/app"
 # media file fix in development; not needed in production
 if settings.DEBUG is True:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+	urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
