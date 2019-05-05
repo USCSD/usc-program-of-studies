@@ -61,7 +61,7 @@
           >
             <div class="container has-text-centered">
               Click here for a Complete Class List
-              <span class="icon is-pulled-right">
+              <span class="icon is-pulled-right is-hidden-touch">
                 <i
                   class="fa fa-arrow-right"
                   aria-hidden="true"
@@ -76,7 +76,7 @@
           >
             <div class="container has-text-centered">
               Click here for Career Clusters
-              <span class="icon is-pulled-right">
+              <span class="icon is-pulled-right is-hidden-touch">
                 <i
                   class="fa fa-arrow-right"
                   aria-hidden="true"
@@ -90,7 +90,7 @@
           >
             <div class="container has-text-centered">
               Click here for General Information
-              <span class="icon is-pulled-right">
+              <span class="icon is-pulled-right is-hidden-touch">
                 <i
                   class="fa fa-arrow-right"
                   aria-hidden="true"

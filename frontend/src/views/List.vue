@@ -450,7 +450,7 @@
                   </button>
                 </div>
               </div>
-              <table class="table is-fullwidth is-bordered">
+              <table class="table is-fullwidth is-bordered is-hidden-mobile">
                 <thead>
                   <th>Class Name</th>
                   <th>Grade Levels</th>
@@ -481,6 +481,36 @@
                     </td>
                     <td>
                       {{a_class.credits}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table is-fullwidth is-bordered is-hidden-tablet is-narrow">
+                <thead>
+                  <th>Class Name</th>
+                  <th>Grade Levels</th>
+                  <th>Subject</th>
+                </thead>
+
+                <tbody id='table_body'>
+                  <tr v-if="classes.length==0||classes==null">
+                    <td>No Classes Matched Your Search :(</td>
+                    <td>Try Different Search Terms!</td>
+                    <td></td>
+                  </tr>
+                  <tr
+                    v-else
+                    v-for="a_class in classes"
+                    :key="a_class.id"
+                  >
+                    <td>
+                      <router-link :to="{name:'detail', params: {id:a_class.id}}">{{a_class.class_name}}</router-link>
+                    </td>
+                    <td>
+                      {{a_class.grade}}
+                    </td>
+                    <td>
+                      {{a_class.subject}}
                     </td>
                   </tr>
                 </tbody>
@@ -530,7 +560,6 @@ export default {
     axios
       .get('/api/classes/' + self.filters)
       .then(function (response) {
-        console.log('adding classes to data')
         self.classes = response.data
       })
       .catch(function (error) {

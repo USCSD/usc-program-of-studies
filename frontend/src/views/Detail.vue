@@ -43,7 +43,7 @@
                   class="is-1"
                   style="padding-bottom:15px"
                 >{{class_detail.description}}</p>
-                <table class="table is-bordered is-fullwidth">
+                <table class="table is-bordered is-fullwidth is-hidden-mobile">
                   <thead>
                     <tr>
                       <th>Length</th>
@@ -59,6 +59,36 @@
                       <td>{{class_detail.length}}</td>
                       <td>{{class_detail.credits}}</td>
                       <td>{{class_detail.grade}}</td>
+                      <td>{{class_detail.weighted}}</td>
+                      <td>{{class_detail.qualifications}}</td>
+                      <td>{{class_detail.mods}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table is-bordered is-fullwidth is-hidden-tablet">
+                  <thead>
+                    <tr>
+                      <th>Length</th>
+                      <th>Credits</th>
+                      <th>Grade Levels</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>{{class_detail.length}}</td>
+                      <td>{{class_detail.credits}}</td>
+                      <td>{{class_detail.grade}}</td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr>
+                      <th>Weighted</th>
+                      <th>Qualifications</th>
+                      <th>Mods Per Week</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
                       <td>{{class_detail.weighted}}</td>
                       <td>{{class_detail.qualifications}}</td>
                       <td>{{class_detail.mods}}</td>
