@@ -56,8 +56,8 @@ ENV_NAME = env("ENV_NAME")
 # -----------------------------------------------------------------------------
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env("DEBUG", False)
-ALLOWED_HOSTS = env("ALLOWED_HOSTS", [])
-
+# ALLOWED_HOSTS = env("ALLOWED_HOSTS", [])
+ALLOWED_HOSTS = ['programofstudies.uscsd.k12.pa.us']
 # -----------------------------------------------------------------------------
 # Application Definition
 # -----------------------------------------------------------------------------
@@ -188,4 +188,5 @@ WEBPACK_LOADER = {
 MEDIA_URL = '/media/'
 
 # Directory where media files will reside
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'backend/media')
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),"backend/media")
+
