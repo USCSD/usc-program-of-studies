@@ -57,7 +57,7 @@ ENV_NAME = env("ENV_NAME")
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env("DEBUG", False)
 # ALLOWED_HOSTS = env("ALLOWED_HOSTS", [])
-ALLOWED_HOSTS = ['programofstudies.uscsd.k12.pa.us']
+ALLOWED_HOSTS = ['programofstudies.uscsd.k12.pa.us','localhost']
 # -----------------------------------------------------------------------------
 # Application Definition
 # -----------------------------------------------------------------------------

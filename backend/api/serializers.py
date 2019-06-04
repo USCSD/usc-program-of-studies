@@ -6,7 +6,7 @@ class ClassSerializer(serializers.ModelSerializer):
     class Meta:
         model = Class
         fields = ('id', 'code', 'class_name', 'credits', 'length', 'weighted',
-                  'subject', 'grade', 'qualification', 'careers', 'description', 'link','mods')
+                  'subject', 'grade', 'qualification', 'careers', 'description', 'link','mods','prerequisite')
 
 class CareerSerializer(serializers.ModelSerializer):
     class Meta:
