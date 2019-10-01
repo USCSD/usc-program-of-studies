@@ -12,7 +12,7 @@ class Class(models.Model):
     subject = models.CharField(max_length=100)
     grade = models.CharField(max_length=100)
     qualification = models.TextField(max_length=250, blank = True)
-    careers = models.ManyToManyField('Career')
+    careers = models.ManyToManyField('Career',blank=True)
     description = models.TextField(max_length=5000, blank=True)
     prerequisite = models.TextField(max_length=250, blank=True)
     link = models.CharField(max_length=100, blank=True)
@@ -25,7 +25,7 @@ class Career(models.Model):
     career_name = models.CharField(max_length=100)
     description = models.TextField(max_length=10000, blank=True)
     career_pathways = models.TextField(max_length=5000,blank=True)
-    suggested_classes = models.ManyToManyField(Class)
+    suggested_classes = models.ManyToManyField(Class,blank=True)
 
     def __str__(self):
         return self.career_name
