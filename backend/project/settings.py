@@ -68,10 +68,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'rest_framework',
     'webpack_loader',
     'api',
     'django_filters',
+    'maintenancemode',
 ]
 
 MIDDLEWARE = [
@@ -82,6 +84,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'maintenancemode.middleware.MaintenanceModeMiddleware',
 ]
 
 ROOT_URLCONF = 'project.urls'
@@ -186,6 +189,8 @@ WEBPACK_LOADER = {
 
 # URL endpoint for accessing media files
 MEDIA_URL = '/media/'
+
+SITE_ID = 2
 
 # Directory where media files will reside
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'backend/media')
