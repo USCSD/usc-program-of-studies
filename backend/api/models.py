@@ -11,10 +11,10 @@ class Class(models.Model):
     weighted = models.BooleanField()
     subject = models.CharField(max_length=100)
     grade = models.CharField(max_length=100)
-    qualification = models.CharField(max_length=250, blank = True)
+    qualification = models.TextField(max_length=250, blank = True)
     careers = models.ManyToManyField('Career',blank=True)
-    description = models.CharField(max_length=5000, blank=True)
-    prerequisite = models.CharField(max_length=250, blank=True)
+    description = models.TextField(max_length=5000, blank=True)
+    prerequisite = models.TextField(max_length=250, blank=True)
     link = models.CharField(max_length=100, blank=True)
     mods = models.CharField(max_length=10, blank=True)
 
@@ -23,8 +23,8 @@ class Class(models.Model):
 
 class Career(models.Model):
     career_name = models.CharField(max_length=100)
-    description = models.CharField(max_length=10000, blank=True)
-    career_pathways = models.CharField(max_length=5000,blank=True)
+    description = models.TextField(max_length=10000, blank=True)
+    career_pathways = models.TextField(max_length=5000,blank=True)
     suggested_classes = models.ManyToManyField(Class,blank=True)
 
     def __str__(self):

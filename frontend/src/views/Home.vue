@@ -60,8 +60,8 @@
             style="margin-bottom:20px"
           >
             <div class="container has-text-centered">
-              Click this button for a complete class list
-              <span class="icon is-pulled-right">
+              Click here for a Complete Class List
+              <span class="icon is-pulled-right is-hidden-touch">
                 <i
                   class="fa fa-arrow-right"
                   aria-hidden="true"
@@ -75,8 +75,8 @@
             style="margin-bottom:20px"
           >
             <div class="container has-text-centered">
-              Click this button for career clusters
-              <span class="icon is-pulled-right">
+              Click here for Career Clusters
+              <span class="icon is-pulled-right is-hidden-touch">
                 <i
                   class="fa fa-arrow-right"
                   aria-hidden="true"
@@ -89,8 +89,8 @@
             to="/info"
           >
             <div class="container has-text-centered">
-              Click this button for general information
-              <span class="icon is-pulled-right">
+              Click here for General Information
+              <span class="icon is-pulled-right is-hidden-touch">
                 <i
                   class="fa fa-arrow-right"
                   aria-hidden="true"
