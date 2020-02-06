@@ -46,6 +46,7 @@
                 <table class="table is-bordered is-fullwidth is-hidden-touch">
                   <thead>
                     <tr>
+                      <th>Class ID</th>
                       <th>Length</th>
                       <th>Credits</th>
                       <th>Grade Levels</th>
@@ -56,6 +57,7 @@
                   </thead>
                   <tbody>
                     <tr>
+                      <td>{{class_detail.code}}</td>
                       <td>{{class_detail.length}}</td>
                       <td>{{class_detail.credits}}</td>
                       <td>{{class_detail.grade}}</td>
@@ -156,13 +158,17 @@ export default {
 
   computed: {
     getId: function () {
-      var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/
-      var match = this.class_detail.link.match(regExp)
-
-      if (match && match[2].length === 11) {
-        return 'https://www.youtube.com/embed/' + match[2]
+      var link = this.class_detail.link
+      if (link.includes('you')) {
+        var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/
+        var match = this.class_detail.link.match(regExp)
+        if (match && match[2].length === 11) {
+          return 'https://www.youtube.com/embed/' + match[2]
+        } else {
+          return 'error'
+        }
       } else {
-        return 'error'
+        return link
       }
     }
   },
