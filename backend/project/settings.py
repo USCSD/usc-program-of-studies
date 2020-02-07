@@ -73,7 +73,8 @@ INSTALLED_APPS = [
     'webpack_loader',
     'api',
     'django_filters',
-    'maintenancemode'
+    'maintenancemode',
+    'massadmin'
 ]
 
 MIDDLEWARE = [
