@@ -34,7 +34,7 @@
         <div class="column is-8 is-offset-2">
           <div class="card">
             <div class="card-content">
-              <div class="box">
+              <div class="box has-text-centered">
                 <div class="buttons is-centered">
                   <div class="control">
                     <div class="dropdown is-hoverable">
@@ -389,7 +389,7 @@
                           aria-controls="dropdown-menu4"
                           style="margin-right: 10px"
                         >
-                          <span>Credits Per Semester</span>
+                          <span>Total Credits</span>
                           <span class="icon is-small">
                             <i
                               class="fa fa-caret-down"
@@ -407,24 +407,24 @@
                           <div style="padding-left:5px">
                             <input
                               type="checkbox"
-                              id="half credit"
-                              value="credits=0.5"
+                              id="1 credit"
+                              value="credits=1"
                               v-model="checkedBoxes"
                               @change="filter"
                             >
-                            <label for="half credit"> 0.5</label>
+                            <label for="1 credit"> 1</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
                           <div style="padding-left:5px">
                             <input
                               type="checkbox"
-                              id="1 credit"
-                              value="credits=1"
+                              id="2 credits"
+                              value="credits=2"
                               v-model="checkedBoxes"
                               @change="filter"
                             >
-                            <label for="1 credits"> 1</label>
+                            <label for="2 credits"> 2</label>
                           </div>
                         </div>
                       </div>
@@ -446,7 +446,7 @@
                     class="button is-dark is-outlined is-fullwidth"
                     @click="reset();filter()"
                   >
-                    Click me to Reset Filters
+                    <strong>Click Here to Reset Filters</strong>
                   </button>
                 </div>
               </div>

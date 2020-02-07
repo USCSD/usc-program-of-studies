@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Class(models.Model):
-    code = models.CharField(max_length=5)
+    code = models.CharField(max_length=10)
     class_name = models.CharField(max_length=100)
     credits = models.CharField(max_length=10)
     length = models.CharField(max_length=25)
