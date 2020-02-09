@@ -403,6 +403,19 @@
                         id="dropdown-menu4"
                         role="menu"
                       >
+                      
+                        <div class="dropdown-content">
+                          <div style="padding-left:5px">
+                            <input
+                              type="checkbox"
+                              id=".5 credit"
+                              value="credits=.5"
+                              v-model="checkedBoxes"
+                              @change="filter"
+                            >
+                            <label for=".5 credit"> .5</label>
+                          </div>
+                        </div>
                         <div class="dropdown-content">
                           <div style="padding-left:5px">
                             <input
