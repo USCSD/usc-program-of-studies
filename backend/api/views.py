@@ -4,7 +4,7 @@ from rest_framework import status, generics, mixins, filters
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django_filters.rest_framework import DjangoFilterBackend
-from .models import Class,Career,Info
+from .models import Class, Career, Info
 from .serializers import *
 # Create your views here.
 
@@ -37,6 +37,9 @@ class class_list(generics.ListCreateAPIView):
         credit = self.request.query_params.get('credits', None)
         if credit is not None:
             queryset = queryset.filter(credits__contains=credit)
+        viewable = self.request.query_params.get('viewable', None)
+        if viewable is not None:
+            queryset = queryset.filter(viewable__exact=viewable)
         return queryset
 
     filter_backends = (filters.SearchFilter,)
@@ -47,17 +50,21 @@ class class_detail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Class.objects.all()
     serializer_class = ClassSerializer
 
+
 class career_list(generics.ListCreateAPIView):
     queryset = Career.objects.all()
     serializer_class = CareerSerializer
+
 
 class career_detail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Career.objects.all()
     serializer_class = CareerSerializer
 
+
 class info_list(generics.ListCreateAPIView):
     queryset = Info.objects.all()
     serializer_class = InfoSerializer
+
 
 class info_detail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Info.objects.all()

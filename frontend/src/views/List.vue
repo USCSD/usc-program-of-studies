@@ -8,15 +8,8 @@
               <router-link to="/">Home</router-link>
             </p>
             <p class="level-item has-text-centered">
-              <a
-                href=""
-                class="link is-info"
-              >
-                <img
-                  src="~__SHARED_STATIC__/usclogo.png"
-                  alt=""
-                  style="height:100px;"
-                >
+              <a href class="link is-info">
+                <img src="~__SHARED_STATIC__/usclogo.png" alt style="height:100px;" />
               </a>
             </p>
             <p class="level-item has-text-centered">
@@ -27,10 +20,7 @@
       </div>
     </div>
     <div class="list">
-      <div
-        class="container"
-        style="margin-top:-100px;"
-      >
+      <div class="container" style="margin-top:-100px;">
         <div class="column is-8 is-offset-2">
           <div class="card">
             <div class="card-content">
@@ -47,18 +37,11 @@
                         >
                           <span>Grade Level</span>
                           <span class="icon is-small">
-                            <i
-                              class="fa fa-caret-down"
-                              aria-hidden="true"
-                            ></i>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
                           </span>
                         </button>
                       </div>
-                      <div
-                        class="dropdown-menu"
-                        id="dropdown-menu4"
-                        role="menu"
-                      >
+                      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
                         <div class="dropdown-content">
                           <div style="padding-left:5px">
                             <input
@@ -67,8 +50,8 @@
                               value="grade=9"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="9th"> 9th</label>
+                            />
+                            <label for="9th">9th</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -79,8 +62,8 @@
                               value="grade=10"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="10th"> 10th</label>
+                            />
+                            <label for="10th">10th</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -91,8 +74,8 @@
                               value="grade=11"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="11th"> 11th</label>
+                            />
+                            <label for="11th">11th</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -103,14 +86,14 @@
                               value="grade=12"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="12th"> 12th</label>
+                            />
+                            <label for="12th">12th</label>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class=control>
+                  <div class="control">
                     <div class="dropdown is-hoverable">
                       <div class="dropdown-trigger">
                         <button
@@ -121,18 +104,11 @@
                         >
                           <span>Subject</span>
                           <span class="icon is-small">
-                            <i
-                              class="fa fa-caret-down"
-                              aria-hidden="true"
-                            ></i>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
                           </span>
                         </button>
                       </div>
-                      <div
-                        class="dropdown-menu"
-                        id="dropdown-menu4"
-                        role="menu"
-                      >
+                      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
                         <div class="dropdown-content">
                           <div style="padding-left:5px">
                             <input
@@ -141,8 +117,8 @@
                               value="subject=English"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="English"> English</label>
+                            />
+                            <label for="English">English</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -153,8 +129,8 @@
                               value="subject=Science"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="Science"> Science</label>
+                            />
+                            <label for="Science">Science</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -165,8 +141,8 @@
                               value="subject=Social Studies"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="Social Studies"> Social Studies</label>
+                            />
+                            <label for="Social Studies">Social Studies</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -177,8 +153,8 @@
                               value="subject=Mathematics"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="Mathematics"> Mathematics</label>
+                            />
+                            <label for="Mathematics">Mathematics</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -189,7 +165,7 @@
                               value="subject=Electives"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
+                            />
                             <label for="Electives">Electives</label>
                           </div>
                         </div>
@@ -201,8 +177,8 @@
                               value="subject=World Languages Electives"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="World Language Electives"> World Languages Electives</label>
+                            />
+                            <label for="World Language Electives">World Languages Electives</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -213,8 +189,10 @@
                               value="subject=Technical and Practical Studies"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="Technical and Practical Studies"> Technical and Practical Studies</label>
+                            />
+                            <label
+                              for="Technical and Practical Studies"
+                            >Technical and Practical Studies</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -225,8 +203,8 @@
                               value="subject=Visual Arts Electives"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="Visual Arts Electives"> Visual Arts Electives</label>
+                            />
+                            <label for="Visual Arts Electives">Visual Arts Electives</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -237,8 +215,8 @@
                               value="subject=Music Electives"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="Music Electives"> Music Electives</label>
+                            />
+                            <label for="Music Electives">Music Electives</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -249,8 +227,8 @@
                               value="subject=Wellness Education"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="Wellness Education"> Wellness Education</label>
+                            />
+                            <label for="Wellness Education">Wellness Education</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -261,14 +239,16 @@
                               value="subject=Interdisciplinary Opportunities Electives"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="Interdisciplinary Opportunities Electives"> Interdisciplinary Opportunities Electives</label>
+                            />
+                            <label
+                              for="Interdisciplinary Opportunities Electives"
+                            >Interdisciplinary Opportunities Electives</label>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class=control>
+                  <div class="control">
                     <div class="dropdown is-hoverable">
                       <div class="dropdown-trigger">
                         <button
@@ -279,18 +259,11 @@
                         >
                           <span>Qualifications</span>
                           <span class="icon is-small">
-                            <i
-                              class="fa fa-caret-down"
-                              aria-hidden="true"
-                            ></i>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
                           </span>
                         </button>
                       </div>
-                      <div
-                        class="dropdown-menu"
-                        id="dropdown-menu4"
-                        role="menu"
-                      >
+                      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
                         <div class="dropdown-content">
                           <div style="padding-left:5px">
                             <input
@@ -299,8 +272,8 @@
                               value="qualification=AP"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="AP"> Advanced Placement(AP)</label>
+                            />
+                            <label for="AP">Advanced Placement(AP)</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -311,8 +284,8 @@
                               value="qualification=Honors"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="Honors"> Honors</label>
+                            />
+                            <label for="Honors">Honors</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -323,14 +296,14 @@
                               value="qualification=IB Diploma"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="IB Diploma"> IB Diploma</label>
+                            />
+                            <label for="IB Diploma">IB Diploma</label>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class=control>
+                  <div class="control">
                     <div class="dropdown is-hoverable">
                       <div class="dropdown-trigger">
                         <button
@@ -341,18 +314,11 @@
                         >
                           <span>Term Length</span>
                           <span class="icon is-small">
-                            <i
-                              class="fa fa-caret-down"
-                              aria-hidden="true"
-                            ></i>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
                           </span>
                         </button>
                       </div>
-                      <div
-                        class="dropdown-menu"
-                        id="dropdown-menu4"
-                        role="menu"
-                      >
+                      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
                         <div class="dropdown-content">
                           <div style="padding-left:5px">
                             <input
@@ -361,8 +327,8 @@
                               value="length=year"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="year"> Year</label>
+                            />
+                            <label for="year">Year</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -373,14 +339,14 @@
                               value="length=semester"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="semester"> Semester</label>
+                            />
+                            <label for="semester">Semester</label>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class=control>
+                  <div class="control">
                     <div class="dropdown is-hoverable">
                       <div class="dropdown-trigger">
                         <button
@@ -391,19 +357,11 @@
                         >
                           <span>Total Credits</span>
                           <span class="icon is-small">
-                            <i
-                              class="fa fa-caret-down"
-                              aria-hidden="true"
-                            ></i>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
                           </span>
                         </button>
                       </div>
-                      <div
-                        class="dropdown-menu"
-                        id="dropdown-menu4"
-                        role="menu"
-                      >
-                      
+                      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
                         <div class="dropdown-content">
                           <div style="padding-left:5px">
                             <input
@@ -412,8 +370,8 @@
                               value="credits=.5"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for=".5 credit"> .5</label>
+                            />
+                            <label for=".5 credit">.5</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -424,8 +382,8 @@
                               value="credits=1"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="1 credit"> 1</label>
+                            />
+                            <label for="1 credit">1</label>
                           </div>
                         </div>
                         <div class="dropdown-content">
@@ -436,8 +394,8 @@
                               value="credits=2"
                               v-model="checkedBoxes"
                               @change="filter"
-                            >
-                            <label for="2 credits"> 2</label>
+                            />
+                            <label for="2 credits">2</label>
                           </div>
                         </div>
                       </div>
@@ -446,19 +404,16 @@
                 </div>
                 <div class="level">
                   <input
-                    class='input'
+                    class="input"
                     type="text"
-                    placeholder='Enter Keywords'
-                    id='searchbar'
-                    v-model='search_term'
+                    placeholder="Enter Keywords"
+                    id="searchbar"
+                    v-model="search_term"
                     v-on:keyup="filter"
-                  >
+                  />
                 </div>
                 <div class="level">
-                  <button
-                    class="button is-dark is-outlined is-fullwidth"
-                    @click="reset();filter()"
-                  >
+                  <button class="button is-dark is-outlined is-fullwidth" @click="reset();filter()">
                     <strong>Click Here to Reset Filters</strong>
                   </button>
                 </div>
@@ -471,30 +426,22 @@
                   <th>Credits</th>
                 </thead>
 
-                <tbody id='table_body'>
+                <tbody id="table_body">
                   <tr v-if="classes.length==0||classes==null">
                     <td>No Classes Matched Your Search :(</td>
                     <td>Try Different Search Terms!</td>
                     <td></td>
                     <td></td>
                   </tr>
-                  <tr
-                    v-else
-                    v-for="a_class in classes"
-                    :key="a_class.id"
-                  >
+                  <tr v-else v-for="a_class in classes" :key="a_class.id">
                     <td>
-                      <router-link :to="{name:'detail', params: {id:a_class.id}}">{{a_class.class_name}}</router-link>
+                      <router-link
+                        :to="{name:'detail', params: {id:a_class.id}}"
+                      >{{a_class.class_name}}</router-link>
                     </td>
-                    <td>
-                      {{a_class.grade}}
-                    </td>
-                    <td>
-                      {{a_class.subject}}
-                    </td>
-                    <td>
-                      {{a_class.credits}}
-                    </td>
+                    <td>{{a_class.grade}}</td>
+                    <td>{{a_class.subject}}</td>
+                    <td>{{a_class.credits}}</td>
                   </tr>
                 </tbody>
               </table>
@@ -505,26 +452,20 @@
                   <th>Subject</th>
                 </thead>
 
-                <tbody id='table_body'>
+                <tbody id="table_body">
                   <tr v-if="classes.length==0||classes==null">
                     <td>No Classes Matched Your Search :(</td>
                     <td>Try Different Search Terms!</td>
                     <td></td>
                   </tr>
-                  <tr
-                    v-else
-                    v-for="a_class in classes"
-                    :key="a_class.id"
-                  >
+                  <tr v-else v-for="a_class in classes" :key="a_class.id">
                     <td>
-                      <router-link :to="{name:'detail', params: {id:a_class.id}}">{{a_class.class_name}}</router-link>
+                      <router-link
+                        :to="{name:'detail', params: {id:a_class.id}}"
+                      >{{a_class.class_name}}</router-link>
                     </td>
-                    <td>
-                      {{a_class.grade}}
-                    </td>
-                    <td>
-                      {{a_class.subject}}
-                    </td>
+                    <td>{{a_class.grade}}</td>
+                    <td>{{a_class.subject}}</td>
                   </tr>
                 </tbody>
               </table>
@@ -534,81 +475,80 @@
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
 
 export default {
-  name: 'list',
-  data: function () {
+  name: "list",
+  data: function() {
     return {
       classes: [],
       checkedBoxes: [],
-      search_term: '',
-      filters: '?'
-    }
+      search_term: "",
+      filters: "?"
+    };
   },
-  mounted: function () {
-    if (localStorage.getItem('boxes')) {
+  mounted: function() {
+    if (localStorage.getItem("boxes")) {
       try {
-        this.checkedBoxes = JSON.parse(localStorage.getItem('boxes'))
+        this.checkedBoxes = JSON.parse(localStorage.getItem("boxes"));
       } catch (e) {
-        localStorage.removeItem('boxes')
+        localStorage.removeItem("boxes");
       }
     }
     if (localStorage.search_term) {
-      this.search_term = localStorage.search_term
+      this.search_term = localStorage.search_term;
     }
-    var self = this
-    var box
-    self.filters = '?'
+    var self = this;
+    var box;
+    self.filters = "?";
     for (box = 0; box < self.checkedBoxes.length; box++) {
-      self.filters = self.filters + String(self.checkedBoxes[box]) + '&'
+      self.filters = self.filters + String(self.checkedBoxes[box]) + "&";
     }
-    if (this.search_term !== '' || this.search_term !== null) {
-      self.filters = self.filters + 'search=' + this.search_term
+    if (this.search_term !== "" || this.search_term !== null) {
+      self.filters = self.filters + "search=" + this.search_term;
     }
     axios
-      .get('/api/classes/' + self.filters)
-      .then(function (response) {
-        self.classes = response.data
+      .get("/api/classes/" + self.filters)
+      .then(function(response) {
+        self.classes = response.data;
       })
-      .catch(function (error) {
+      .catch(function(error) {
         // if an error occurs, print that error
-        console.log(error)
-      })
+        console.log(error);
+      });
   },
   methods: {
-    filter: function () {
-      var self = this
-      var box
-      self.filters = '?'
+    filter: function() {
+      var self = this;
+      var box;
+      self.filters = "?viewable=1&";
       for (box = 0; box < self.checkedBoxes.length; box++) {
-        self.filters = self.filters + String(self.checkedBoxes[box]) + '&'
+        self.filters = self.filters + String(self.checkedBoxes[box]) + "&";
       }
-      if (this.search_term !== '' || this.search_term !== null) {
-        self.filters = self.filters + 'search=' + this.search_term
+      if (this.search_term !== "" || this.search_term !== null) {
+        self.filters = self.filters + "search=" + this.search_term;
       }
       axios
-        .get('/api/classes/' + self.filters)
-        .then(function (response) {
-          self.classes = response.data
+        .get("/api/classes/" + self.filters)
+        .then(function(response) {
+          self.classes = response.data;
         })
-        .catch(function (error) {
+        .catch(function(error) {
           // if an error occurs, print that error
-          console.log(error)
-        })
-      const parsed = JSON.stringify(this.checkedBoxes)
-      localStorage.setItem('boxes', parsed)
-      localStorage.search_term = this.search_term
+          console.log(error);
+        });
+      const parsed = JSON.stringify(this.checkedBoxes);
+      localStorage.setItem("boxes", parsed);
+      localStorage.search_term = this.search_term;
     },
-    reset: function () {
-      this.filters = '?'
-      this.checkedBoxes = []
-      this.search_term = ''
+    reset: function() {
+      this.filters = "?viewable=1&";
+      this.checkedBoxes = [];
+      this.search_term = "";
     }
   }
-}
+};
 </script>
