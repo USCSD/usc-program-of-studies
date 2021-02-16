@@ -7,7 +7,7 @@ from django.db import models
 
 
 class ClassAdmin(admin.ModelAdmin):
-    list_display = ('viewable', 'class_name', 'code', 'subject', 'grade')
+    list_display = ('class_name', 'code', 'subject', 'grade', 'viewable')
     search_fields = ('class_name', 'code')
     filter_horizontal = ('careers',)
     formfield_overrides = {
