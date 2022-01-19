@@ -52,7 +52,7 @@
                       <th>Grade Levels</th>
                       <th>Weighted</th>
                       <th>Qualifications</th>
-                      <th>Mods Per Week</th>
+                      <th>Meets Per Week</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -102,7 +102,7 @@
                     <tr>
                       <th>Weighted</th>
                       <th>Qualifications</th>
-                      <th>Mods Per Week</th>
+                      <th>Meets Per Week</th>
                     </tr>
                   </thead>
                   <tbody>

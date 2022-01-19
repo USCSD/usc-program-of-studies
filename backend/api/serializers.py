@@ -3,6 +3,7 @@ from api.models import Class, Career, Info
 
 
 class ClassSerializer(serializers.ModelSerializer):
+    mods = serializers.CharField(source="meets")
     class Meta:
         model = Class
         fields = ('id', 'code', 'class_name', 'credits', 'length', 'weighted',
