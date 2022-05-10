@@ -14,7 +14,7 @@ class Command(BaseCommand):
             classes.delete()
         if careers.count() != 0:
             careers.delete()
-        clusters = open("careerclusters.txt","r",encoding = "utf8")
+        clusters = open("careerclusters.csv","r",encoding = "utf8")
         for line in clusters:
             line = line.split(',')
             a_career = Career()
@@ -22,7 +22,7 @@ class Command(BaseCommand):
             a_career.description = line[1].replace(";",",")
             a_career.career_pathways = line[2]
             a_career.save()
-        master = open("POS3.txt", "r", encoding="utf8")
+        master = open("POS3.csv", "r", encoding="utf8")
         for line in master:
             line = line.split(',')
             a_class = Class()

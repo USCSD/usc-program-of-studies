@@ -13,7 +13,7 @@
                 class="link is-info"
               >
                 <img
-                  src="~__SHARED_STATIC__/usclogo.png"
+                  src="./static/usclogo.png"
                   alt=""
                   style="height:100px;"
                 >
@@ -160,7 +160,7 @@ export default {
     getId: function () {
       var link = this.class_detail.link
       if (link.includes('you')) {
-        var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/
+        var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/
         var match = this.class_detail.link.match(regExp)
         if (match && match[2].length === 11) {
           return 'https://www.youtube.com/embed/' + match[2]

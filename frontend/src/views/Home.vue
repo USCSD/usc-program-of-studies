@@ -10,7 +10,7 @@
               href="https://www.uscsd.k12.pa.us/"
             >
               <img
-                src="~__SHARED_STATIC__/usclogo.png"
+                src="./static/usclogo.png"
                 width="50"
                 height="118"
               >
@@ -44,7 +44,7 @@
         <div class="container has-text-centered">
           <img
             style="margin-bottom:25px"
-            src="~__SHARED_STATIC__/usclogo.png"
+            src="./static/usclogo.png"
             width="250"
             height="400"
           >
@@ -107,7 +107,7 @@
 
 <style>
 .has-bg-img {
-  background: url("~__SHARED_STATIC__/homebackground.jpg") center center;
+  background: url("./static/homebackground.jpg") center center;
   background-size: cover;
 }
 </style>

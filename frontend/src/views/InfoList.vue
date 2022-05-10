@@ -13,7 +13,7 @@
                 class="link is-info"
               >
                 <img
-                  src="~__SHARED_STATIC__/usclogo.png"
+                  src="./static/usclogo.png"
                   alt=""
                   style="height:100px;"
                 >
@@ -36,8 +36,8 @@
             <div class="box">
               <h1 class="title is-2">General Information</h1>
               <div class="columns">
-                <template v-for="column in columns">
-                  <div :key="column.id">
+                <template v-for="column in columns" :key="column.id">
+                  <div>
                     <div class="column">
                       <div
                         class="box"

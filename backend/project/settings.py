@@ -73,7 +73,7 @@ INSTALLED_APPS = [
     'webpack_loader',
     'api',
     'django_filters',
-    'maintenancemode',
+    'maintenance_mode',
     'massadmin'
 ]
 
@@ -85,7 +85,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'maintenancemode.middleware.MaintenanceModeMiddleware',
+    'maintenance_mode.middleware.MaintenanceModeMiddleware',
 ]
 
 ROOT_URLCONF = 'project.urls'

@@ -1,0 +1,81 @@
+{
+  "status": "done",
+  "assets": {
+    "img/usclogo.4ecf4e10.png": {
+      "name": "img/usclogo.4ecf4e10.png",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/img/usclogo.4ecf4e10.png",
+      "publicPath": "/static/img/usclogo.4ecf4e10.png"
+    },
+    "img/homebackground.7e0b2e78.jpg": {
+      "name": "img/homebackground.7e0b2e78.jpg",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/img/homebackground.7e0b2e78.jpg",
+      "publicPath": "/static/img/homebackground.7e0b2e78.jpg"
+    },
+    "css/app.b9b7caa1.css": {
+      "name": "css/app.b9b7caa1.css",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/css/app.b9b7caa1.css",
+      "publicPath": "/static/css/app.b9b7caa1.css"
+    },
+    "js/app.b0dac301.js": {
+      "name": "js/app.b0dac301.js",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/js/app.b0dac301.js",
+      "publicPath": "/static/js/app.b0dac301.js"
+    },
+    "js/chunk-vendors.227c1c1d.js": {
+      "name": "js/chunk-vendors.227c1c1d.js",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/js/chunk-vendors.227c1c1d.js",
+      "publicPath": "/static/js/chunk-vendors.227c1c1d.js"
+    },
+    "js/app.b0dac301.js.map": {
+      "name": "js/app.b0dac301.js.map",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/js/app.b0dac301.js.map",
+      "publicPath": "/static/js/app.b0dac301.js.map"
+    },
+    "js/chunk-vendors.227c1c1d.js.map": {
+      "name": "js/chunk-vendors.227c1c1d.js.map",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/js/chunk-vendors.227c1c1d.js.map",
+      "publicPath": "/static/js/chunk-vendors.227c1c1d.js.map"
+    },
+    "index.html": {
+      "name": "index.html",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/index.html",
+      "publicPath": "/static/index.html"
+    },
+    "favicon.ico": {
+      "name": "favicon.ico",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/favicon.ico",
+      "publicPath": "/static/favicon.ico"
+    },
+    "static/favicon.ico": {
+      "name": "static/favicon.ico",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/static/favicon.ico",
+      "publicPath": "/static/static/favicon.ico"
+    },
+    "static/logo.png": {
+      "name": "static/logo.png",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/static/logo.png",
+      "publicPath": "/static/static/logo.png"
+    },
+    "static/homebackground.jpg": {
+      "name": "static/homebackground.jpg",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/static/homebackground.jpg",
+      "publicPath": "/static/static/homebackground.jpg"
+    },
+    "static/usclogo.png": {
+      "name": "static/usclogo.png",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/static/usclogo.png",
+      "publicPath": "/static/static/usclogo.png"
+    }
+  },
+  "chunks": {
+    "app": [
+      "js/chunk-vendors.227c1c1d.js",
+      "js/chunk-vendors.227c1c1d.js.map",
+      "css/app.b9b7caa1.css",
+      "js/app.b0dac301.js",
+      "css/app.b9b7caa1.css.map",
+      "js/app.b0dac301.js.map"
+    ]
+  },
+  "publicPath": "/static/"
+}

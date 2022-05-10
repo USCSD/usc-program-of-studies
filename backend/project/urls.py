@@ -10,7 +10,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     # API specific paths are set by the 'urls.py' file in the 'api' directory
     path("api/", include("api.urls")),
-    path(r'admin/', include('massadmin.urls')),
+    path("admin/", include('massadmin.urls')),
     path("admin/", admin.site.urls),
 
     # Path for the Vue Single-Page Application (SPA)

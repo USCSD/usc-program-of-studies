@@ -13,7 +13,7 @@
                 class="link is-info"
               >
                 <img
-                  src="~__SHARED_STATIC__/usclogo.png"
+                  src="./static/usclogo.png"
                   alt=""
                   style="height:100px;"
                 >
@@ -41,8 +41,8 @@
               >The Career Cluster initiative is coordinated by the National Association of State Directors of Career Technical Education Consortium. Career Clusters provide 16 groupings of occupations and associated career pathways that help students explore similarly grouped career options. The Career Cluster is an organization tool that helps students navigate their way to greater success in college and career. <strong>Click on one of the boxes below to get more information about the Cluster and a list of classes that fit under it.</strong></p>
             </div>
             <div class="columns">
-              <template v-for="n in 2">
-                <div :key="n">
+              <template v-for="n in 2" :key="n">
+                <div>
                   <div class="column">
                     <div
                       class="box"

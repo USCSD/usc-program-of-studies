@@ -1,15 +1,47 @@
 {
   "name": "frontend",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
   "dependencies": {
     "axios": "^0.25.0",
-    "vue": "^2.6.14",
-    "vue-router": "^3.5.3",
-    "vue-youtube-embed": "^2.2.2"
+    "core-js": "^3.6.5",
+    "vue": "3",
+    "vue-router": "4",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-loader": "^4.0.2"
-  }
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "webpack-bundle-tracker": "^1.5.0",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "defaults",
+    "not dead"
+  ]
 }

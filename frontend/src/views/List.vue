@@ -9,7 +9,7 @@
             </p>
             <p class="level-item has-text-centered">
               <a href class="link is-info">
-                <img src="~__SHARED_STATIC__/usclogo.png" alt style="height:100px;" />
+                <img src="./static/usclogo.png" alt style="height:100px;" />
               </a>
             </p>
             <p class="level-item has-text-centered">
