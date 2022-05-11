@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Otherwise, we'll use the path set by an environment variable
 # -----------------------------------------------------------------------------
 ENV_FILE = os.environ.get(
-    "DJANGO_ENV_FILE", default=os.path.join(BASE_DIR, "project/env.json"))
+    "DJANGO_ENV_FILE", os.path.join(BASE_DIR, "project/env.json"))
 with open(ENV_FILE) as f:
     env_data = json.load(f)
 
@@ -163,8 +163,7 @@ USE_TZ = True
 # Note: We include both the Webpack compiled static files from the frontend
 #       as well as any shared static files between frontend and backend
 STATICFILES_DIRS = [
-    os.path.join(os.path.dirname(BASE_DIR), 'frontend/dist'),
-    os.path.join(os.path.dirname(BASE_DIR), "shared_static")
+    os.path.join(os.path.dirname(BASE_DIR), "frontend/dist"),
 ]
 
 # URL endpoint for accessing static files
@@ -178,9 +177,11 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'public')
 # Configure the Webpack loader plugin
 WEBPACK_LOADER = {
     "DEFAULT": {
-        "BUNDLE_DIR_NAME": "",
+        "CACHE": not DEBUG,
+        "BUNDLE_DIR_NAME": "/",
         "STATS_FILE": os.path.join(
-            os.path.dirname(BASE_DIR), "frontend/webpack-stats.json")
+            os.path.dirname(BASE_DIR), "frontend/webpack-stats.json"),
+        "IGNORE": [".*\.hot-update.js", ".+\.map"]
     }
 }
 

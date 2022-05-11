@@ -13,7 +13,7 @@
                 class="link is-info"
               >
                 <img
-                  src="./static/usclogo.png"
+                  src="/static/usclogo.png"
                   alt=""
                   style="height:100px;"
                 >
