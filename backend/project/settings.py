@@ -56,14 +56,16 @@ ENV_NAME = env("ENV_NAME")
 # -----------------------------------------------------------------------------
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env("DEBUG", False)
-# ALLOWED_HOSTS = env("ALLOWED_HOSTS", [])
 ALLOWED_HOSTS = ['programofstudies.uscsd.k12.pa.us','localhost']
+CSRF_TRUSTED_ORIGINS = ['http://localhost', 'https://programofstudies.uscsd.k12.pa.us']
+
 # -----------------------------------------------------------------------------
 # Application Definition
 # -----------------------------------------------------------------------------
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'mozilla_django_oidc',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -83,6 +85,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'project.customheaderauth.CustomHeaderMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'maintenance_mode.middleware.MaintenanceModeMiddleware',
@@ -145,6 +148,11 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AUTHENTICATION_BACKENDS = [
+    'project.customheaderauth.CustomHeaderBackend',
+]
+
 
 # -----------------------------------------------------------------------------
 # Internalization

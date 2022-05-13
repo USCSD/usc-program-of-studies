@@ -1,17 +1,6 @@
-from django.http import HttpResponse
-from django.shortcuts import render
-from rest_framework import status, generics, mixins, filters
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
-from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import generics, filters
 from .models import Class, Career, Info
 from .serializers import *
-# Create your views here.
-
-
-def hello_world(request):
-    return HttpResponse('<h1>Hello World - API View</h1>')
-
 
 class class_list(generics.ListCreateAPIView):
     serializer_class = ClassSerializer

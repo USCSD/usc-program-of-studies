@@ -9,13 +9,13 @@
       "name": "main.css",
       "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/main.css"
     },
-    "main-76d16e77bc1f09d21c5c.js": {
-      "name": "main-76d16e77bc1f09d21c5c.js",
-      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/main-76d16e77bc1f09d21c5c.js"
+    "main-1c426fb4e54d5e67e8dd.js": {
+      "name": "main-1c426fb4e54d5e67e8dd.js",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/main-1c426fb4e54d5e67e8dd.js"
     },
-    "vendor-76d16e77bc1f09d21c5c.js": {
-      "name": "vendor-76d16e77bc1f09d21c5c.js",
-      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/vendor-76d16e77bc1f09d21c5c.js"
+    "vendor-1c426fb4e54d5e67e8dd.js": {
+      "name": "vendor-1c426fb4e54d5e67e8dd.js",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/vendor-1c426fb4e54d5e67e8dd.js"
     },
     "favicon.ico": {
       "name": "favicon.ico",
@@ -33,24 +33,24 @@
       "name": "usclogo.png",
       "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/usclogo.png"
     },
-    "main.css.map": {
-      "name": "main.css.map",
-      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/main.css.map"
+    "vendor-1c426fb4e54d5e67e8dd.js.LICENSE.txt": {
+      "name": "vendor-1c426fb4e54d5e67e8dd.js.LICENSE.txt",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/vendor-1c426fb4e54d5e67e8dd.js.LICENSE.txt"
     },
-    "main-76d16e77bc1f09d21c5c.js.map": {
-      "name": "main-76d16e77bc1f09d21c5c.js.map",
-      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/main-76d16e77bc1f09d21c5c.js.map"
+    "main-1c426fb4e54d5e67e8dd.js.map": {
+      "name": "main-1c426fb4e54d5e67e8dd.js.map",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/main-1c426fb4e54d5e67e8dd.js.map"
     },
-    "vendor-76d16e77bc1f09d21c5c.js.map": {
-      "name": "vendor-76d16e77bc1f09d21c5c.js.map",
-      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/vendor-76d16e77bc1f09d21c5c.js.map"
+    "vendor-1c426fb4e54d5e67e8dd.js.map": {
+      "name": "vendor-1c426fb4e54d5e67e8dd.js.map",
+      "path": "/home/ersei/git/github.com/9p4/usc-program-of-studies/frontend/dist/vendor-1c426fb4e54d5e67e8dd.js.map"
     }
   },
   "chunks": {
     "main": [
-      "vendor-76d16e77bc1f09d21c5c.js",
+      "vendor-1c426fb4e54d5e67e8dd.js",
       "main.css",
-      "main-76d16e77bc1f09d21c5c.js"
+      "main-1c426fb4e54d5e67e8dd.js"
     ]
   }
 }
