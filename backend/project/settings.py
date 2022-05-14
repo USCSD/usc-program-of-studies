@@ -69,7 +69,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3') if os.getenv("CONFIG_DIR") is None else os.path.join(os.getenv("CONFIG_DIR", "db.sqlite3")),
+        'NAME': os.path.join(BASE_DIR, "db.sqlite3") if os.getenv("CONFIG_DIR") is None else os.path.join(os.getenv("CONFIG_DIR"), "db.sqlite3"), # type: ignore
     }
 }
 
