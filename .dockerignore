@@ -1,0 +1,6 @@
+venv
+*.csv
+*.sqlite3
+.git
+.cache
+*.md
