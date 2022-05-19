@@ -10,9 +10,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Security Settings
 # -----------------------------------------------------------------------------
 SECRET_KEY = os.environ["SECRET_KEY"]
-DEBUG = os.getenv("DEBUG", False)
-ALLOWED_HOSTS = [os.environ["DOMAIN"],'localhost']
+DEBUG = True if os.getenv("DEBUG", "false").lower() == "true" else False
+ALLOWED_HOSTS = [os.environ["DOMAIN"], 'localhost']
+_CSRF_TRUSTED_ORIGINS = ["http://" + i for i in ALLOWED_HOSTS]
+CSRF_TRUSTED_ORIGINS = _CSRF_TRUSTED_ORIGINS + ["https://" + i for i in ALLOWED_HOSTS]
 ENV_NAME = os.environ["ENV_NAME"]
+CONFIG_DIR = os.getenv("CONFIG_DIR", BASE_DIR)
+USE_X_FORWARDED_HOST = True
 
 # -----------------------------------------------------------------------------
 # Application Definition
@@ -36,6 +40,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'project.customheaderauth.CustomHeaderMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -69,7 +74,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, "db.sqlite3") if os.getenv("CONFIG_DIR") is None else os.path.join(os.getenv("CONFIG_DIR"), "db.sqlite3"), # type: ignore
+        'NAME': os.path.join(CONFIG_DIR, "db.sqlite3"),
     }
 }
 
@@ -152,7 +157,5 @@ WEBPACK_LOADER = {
 # URL endpoint for accessing media files
 MEDIA_URL = '/media/'
 
-SITE_ID = 2
-
 # Directory where media files will reside
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),"backend/media")
+MEDIA_ROOT = os.path.join(CONFIG_DIR, "media")

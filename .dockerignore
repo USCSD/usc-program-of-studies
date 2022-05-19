@@ -1,6 +1,7 @@
-venv
+**/venv
 *.csv
 *.sqlite3
-.git
-.cache
+**/.git
+**/.cache
 *.md
+**/media
