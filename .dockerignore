@@ -1,7 +1,9 @@
 **/venv
-*.csv
-*.sqlite3
+**/*.csv
+**/*.sqlite3
 **/.git
 **/.cache
-*.md
+**/*.md
 **/media
+**/.gitignore
+**/__pycache__
