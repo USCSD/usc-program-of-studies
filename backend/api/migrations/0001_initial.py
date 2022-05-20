@@ -7,26 +7,33 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Class',
+            name="Class",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('code', models.CharField(max_length=5)),
-                ('class_name', models.CharField(max_length=100)),
-                ('credits', models.CharField(max_length=10)),
-                ('length', models.CharField(max_length=25)),
-                ('weighted', models.BooleanField()),
-                ('subject', models.CharField(max_length=100)),
-                ('grade', models.CharField(max_length=100)),
-                ('qualification', models.CharField(max_length=250)),
-                ('career', models.CharField(blank=True, max_length=1000)),
-                ('description', models.CharField(blank=True, max_length=5000)),
-                ('prerequisite', models.CharField(blank=True, max_length=250)),
-                ('link', models.CharField(blank=True, max_length=100)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("code", models.CharField(max_length=5)),
+                ("class_name", models.CharField(max_length=100)),
+                ("credits", models.CharField(max_length=10)),
+                ("length", models.CharField(max_length=25)),
+                ("weighted", models.BooleanField()),
+                ("subject", models.CharField(max_length=100)),
+                ("grade", models.CharField(max_length=100)),
+                ("qualification", models.CharField(max_length=250)),
+                ("career", models.CharField(blank=True, max_length=1000)),
+                ("description", models.CharField(blank=True, max_length=5000)),
+                ("prerequisite", models.CharField(blank=True, max_length=250)),
+                ("link", models.CharField(blank=True, max_length=100)),
             ],
         ),
     ]

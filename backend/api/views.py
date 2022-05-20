@@ -2,6 +2,7 @@ from rest_framework import generics, filters
 from .models import Class, Career, Info
 from .serializers import *
 
+
 class class_list(generics.ListCreateAPIView):
     serializer_class = ClassSerializer
 
@@ -11,28 +12,28 @@ class class_list(generics.ListCreateAPIView):
         by filtering against a `grade` query parameter in the URL.
         """
         queryset = Class.objects.all()
-        grade = self.request.query_params.get('grade', None)
+        grade = self.request.query_params.get("grade", None)
         if grade is not None:
             queryset = queryset.filter(grade__contains=grade)
-        subject = self.request.query_params.get('subject', None)
+        subject = self.request.query_params.get("subject", None)
         if subject is not None:
             queryset = queryset.filter(subject__contains=subject)
-        qualification = self.request.query_params.get('qualification', None)
+        qualification = self.request.query_params.get("qualification", None)
         if qualification is not None:
             queryset = queryset.filter(qualification__contains=qualification)
-        length = self.request.query_params.get('length', None)
+        length = self.request.query_params.get("length", None)
         if length is not None:
             queryset = queryset.filter(length__contains=length)
-        credit = self.request.query_params.get('credits', None)
+        credit = self.request.query_params.get("credits", None)
         if credit is not None:
             queryset = queryset.filter(credits__contains=credit)
-        viewable = self.request.query_params.get('viewable', None)
+        viewable = self.request.query_params.get("viewable", None)
         if viewable is not None:
             queryset = queryset.filter(viewable__exact=viewable)
         return queryset
 
     filter_backends = (filters.SearchFilter,)
-    search_fields = ('class_name', 'credits')
+    search_fields = ("class_name", "credits")
 
 
 class class_detail(generics.RetrieveUpdateDestroyAPIView):

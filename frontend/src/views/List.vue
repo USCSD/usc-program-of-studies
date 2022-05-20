@@ -9,7 +9,7 @@
             </p>
             <p class="level-item has-text-centered">
               <a href class="link is-info">
-                <img src="/static/usclogo.png" alt style="height:100px;" />
+                <img src="../../static/usclogo.png" alt style="height: 100px" />
               </a>
             </p>
             <p class="level-item has-text-centered">
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="list">
-      <div class="container" style="margin-top:-100px;">
+      <div class="container" style="margin-top: -100px">
         <div class="column is-8 is-offset-2">
           <div class="card">
             <div class="card-content">
@@ -41,9 +41,13 @@
                           </span>
                         </button>
                       </div>
-                      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                      <div
+                        class="dropdown-menu"
+                        id="dropdown-menu4"
+                        role="menu"
+                      >
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="9th"
@@ -55,7 +59,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="10th"
@@ -67,7 +71,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="11th"
@@ -79,7 +83,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="12th"
@@ -108,9 +112,13 @@
                           </span>
                         </button>
                       </div>
-                      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                      <div
+                        class="dropdown-menu"
+                        id="dropdown-menu4"
+                        role="menu"
+                      >
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="English"
@@ -122,7 +130,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="Science"
@@ -134,7 +142,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="Social Studies"
@@ -146,7 +154,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="Mathematics"
@@ -158,7 +166,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="Electives"
@@ -170,7 +178,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="World Languages Electives"
@@ -178,11 +186,13 @@
                               v-model="checkedBoxes"
                               @change="filter"
                             />
-                            <label for="World Language Electives">World Languages Electives</label>
+                            <label for="World Language Electives"
+                              >World Languages Electives</label
+                            >
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="Technical and Practical Studies"
@@ -190,13 +200,13 @@
                               v-model="checkedBoxes"
                               @change="filter"
                             />
-                            <label
-                              for="Technical and Practical Studies"
-                            >Technical and Practical Studies</label>
+                            <label for="Technical and Practical Studies"
+                              >Technical and Practical Studies</label
+                            >
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="Visual Arts Electives"
@@ -204,11 +214,13 @@
                               v-model="checkedBoxes"
                               @change="filter"
                             />
-                            <label for="Visual Arts Electives">Visual Arts Electives</label>
+                            <label for="Visual Arts Electives"
+                              >Visual Arts Electives</label
+                            >
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="Music Electives"
@@ -220,7 +232,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="Wellness Education"
@@ -228,11 +240,13 @@
                               v-model="checkedBoxes"
                               @change="filter"
                             />
-                            <label for="Wellness Education">Wellness Education</label>
+                            <label for="Wellness Education"
+                              >Wellness Education</label
+                            >
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="Interdisciplinary Opportunities Electives"
@@ -242,7 +256,8 @@
                             />
                             <label
                               for="Interdisciplinary Opportunities Electives"
-                            >Interdisciplinary Opportunities Electives</label>
+                              >Interdisciplinary Opportunities Electives</label
+                            >
                           </div>
                         </div>
                       </div>
@@ -263,9 +278,13 @@
                           </span>
                         </button>
                       </div>
-                      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                      <div
+                        class="dropdown-menu"
+                        id="dropdown-menu4"
+                        role="menu"
+                      >
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="AP"
@@ -277,7 +296,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="Honors"
@@ -289,7 +308,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="IB Diploma"
@@ -318,9 +337,13 @@
                           </span>
                         </button>
                       </div>
-                      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                      <div
+                        class="dropdown-menu"
+                        id="dropdown-menu4"
+                        role="menu"
+                      >
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="year"
@@ -332,7 +355,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="semester"
@@ -361,9 +384,13 @@
                           </span>
                         </button>
                       </div>
-                      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                      <div
+                        class="dropdown-menu"
+                        id="dropdown-menu4"
+                        role="menu"
+                      >
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id=".5 credit"
@@ -375,7 +402,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="1 credit"
@@ -387,7 +414,7 @@
                           </div>
                         </div>
                         <div class="dropdown-content">
-                          <div style="padding-left:5px">
+                          <div style="padding-left: 5px">
                             <input
                               type="checkbox"
                               id="2 credits"
@@ -413,7 +440,13 @@
                   />
                 </div>
                 <div class="level">
-                  <button class="button is-dark is-outlined is-fullwidth" @click="reset();filter()">
+                  <button
+                    class="button is-dark is-outlined is-fullwidth"
+                    @click="
+                      reset();
+                      filter();
+                    "
+                  >
                     <strong>Click Here to Reset Filters</strong>
                   </button>
                 </div>
@@ -427,7 +460,7 @@
                 </thead>
 
                 <tbody id="table_body">
-                  <tr v-if="classes.length==0||classes==null">
+                  <tr v-if="classes.length == 0 || classes == null">
                     <td>No Classes Matched Your Search :(</td>
                     <td>Try Different Search Terms!</td>
                     <td></td>
@@ -436,16 +469,19 @@
                   <tr v-else v-for="a_class in classes" :key="a_class.id">
                     <td>
                       <router-link
-                        :to="{name:'detail', params: {id:a_class.id}}"
-                      >{{a_class.class_name}}</router-link>
+                        :to="{ name: 'detail', params: { id: a_class.id } }"
+                        >{{ a_class.class_name }}</router-link
+                      >
                     </td>
-                    <td>{{a_class.grade}}</td>
-                    <td>{{a_class.subject}}</td>
-                    <td>{{a_class.credits}}</td>
+                    <td>{{ a_class.grade }}</td>
+                    <td>{{ a_class.subject }}</td>
+                    <td>{{ a_class.credits }}</td>
                   </tr>
                 </tbody>
               </table>
-              <table class="table is-fullwidth is-bordered is-hidden-tablet is-narrow">
+              <table
+                class="table is-fullwidth is-bordered is-hidden-tablet is-narrow"
+              >
                 <thead>
                   <th>Class Name</th>
                   <th>Grade Levels</th>
@@ -453,7 +489,7 @@
                 </thead>
 
                 <tbody id="table_body">
-                  <tr v-if="classes.length==0||classes==null">
+                  <tr v-if="classes.length == 0 || classes == null">
                     <td>No Classes Matched Your Search :(</td>
                     <td>Try Different Search Terms!</td>
                     <td></td>
@@ -461,11 +497,12 @@
                   <tr v-else v-for="a_class in classes" :key="a_class.id">
                     <td>
                       <router-link
-                        :to="{name:'detail', params: {id:a_class.id}}"
-                      >{{a_class.class_name}}</router-link>
+                        :to="{ name: 'detail', params: { id: a_class.id } }"
+                        >{{ a_class.class_name }}</router-link
+                      >
                     </td>
-                    <td>{{a_class.grade}}</td>
-                    <td>{{a_class.subject}}</td>
+                    <td>{{ a_class.grade }}</td>
+                    <td>{{ a_class.subject }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -482,15 +519,15 @@ import axios from "axios";
 
 export default {
   name: "list",
-  data: function() {
+  data: function () {
     return {
       classes: [],
       checkedBoxes: [],
       search_term: "",
-      filters: "?"
+      filters: "?",
     };
   },
-  mounted: function() {
+  mounted: function () {
     if (localStorage.getItem("boxes")) {
       try {
         this.checkedBoxes = JSON.parse(localStorage.getItem("boxes"));
@@ -512,16 +549,16 @@ export default {
     }
     axios
       .get("/api/classes/" + self.filters)
-      .then(function(response) {
+      .then(function (response) {
         self.classes = response.data;
       })
-      .catch(function(error) {
+      .catch(function (error) {
         // if an error occurs, print that error
         console.log(error);
       });
   },
   methods: {
-    filter: function() {
+    filter: function () {
       var self = this;
       var box;
       self.filters = "?viewable=1&";
@@ -533,10 +570,10 @@ export default {
       }
       axios
         .get("/api/classes/" + self.filters)
-        .then(function(response) {
+        .then(function (response) {
           self.classes = response.data;
         })
-        .catch(function(error) {
+        .catch(function (error) {
           // if an error occurs, print that error
           console.log(error);
         });
@@ -544,11 +581,11 @@ export default {
       localStorage.setItem("boxes", parsed);
       localStorage.search_term = this.search_term;
     },
-    reset: function() {
+    reset: function () {
       this.filters = "?viewable=1&";
       this.checkedBoxes = [];
       this.search_term = "";
-    }
-  }
+    },
+  },
 };
 </script>

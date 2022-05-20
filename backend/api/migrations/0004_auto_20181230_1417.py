@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0003_career_career_pathways'),
+        ("api", "0003_career_career_pathways"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='career',
-            name='description',
+            model_name="career",
+            name="description",
             field=models.CharField(blank=True, max_length=10000),
         ),
     ]

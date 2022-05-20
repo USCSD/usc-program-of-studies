@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0012_auto_20200207_1948'),
+        ("api", "0012_auto_20200207_1948"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='class',
-            name='viewable',
+            model_name="class",
+            name="viewable",
             field=models.BooleanField(default=True),
         ),
     ]

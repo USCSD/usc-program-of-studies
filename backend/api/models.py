@@ -13,11 +13,12 @@ class Class(models.Model):
     subject = models.CharField(max_length=100)
     grade = models.CharField(max_length=100)
     qualification = models.TextField(max_length=250, blank=True)
-    careers = models.ManyToManyField('Career', blank=True)
+    careers = models.ManyToManyField("Career", blank=True)
     description = models.TextField(max_length=5000, blank=True)
     prerequisite = models.TextField(max_length=250, blank=True)
     link = models.CharField(max_length=100, blank=True)
     viewable = models.BooleanField(default=True)
+
     class Meta:
         verbose_name = "Class"
         verbose_name_plural = "Classes"
@@ -31,6 +32,7 @@ class Career(models.Model):
     description = models.TextField(max_length=10000, blank=True)
     career_pathways = models.TextField(max_length=5000, blank=True)
     suggested_classes = models.ManyToManyField(Class, blank=True)
+
     class Meta:
         verbose_name = "Career"
         verbose_name_plural = "Careers"
@@ -42,6 +44,7 @@ class Career(models.Model):
 class Info(models.Model):
     info_name = models.CharField(max_length=100)
     file_name = models.FileField()
+
     class Meta:
         verbose_name = "Info"
         verbose_name_plural = "Info"

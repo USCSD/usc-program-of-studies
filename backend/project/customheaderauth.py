@@ -1,8 +1,10 @@
 from django.contrib.auth.middleware import RemoteUserMiddleware, RemoteUserBackend
 import os
 
+
 class CustomHeaderMiddleware(RemoteUserMiddleware):
     header = os.environ["AUTH_HEADER"]
+
 
 class CustomHeaderBackend(RemoteUserBackend):
     def configure_user(self, request, user):

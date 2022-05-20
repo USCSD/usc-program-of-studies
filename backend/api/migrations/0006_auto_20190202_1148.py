@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0005_class_mods'),
+        ("api", "0005_class_mods"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='class',
-            name='qualification',
+            model_name="class",
+            name="qualification",
             field=models.CharField(blank=True, max_length=250),
         ),
     ]

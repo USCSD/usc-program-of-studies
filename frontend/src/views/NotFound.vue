@@ -38,44 +38,7 @@
             width="250"
             height="400"
           />
-          <h1 class="title">
-            Welcome to the Upper Saint Clair Program of Studies!
-          </h1>
-          <h2 class="subtitle">
-            An interactive website for more information about the USC classes.
-          </h2>
-          <router-link
-            class="button is-fullwidth is-large"
-            to="/list"
-            style="margin-bottom: 20px"
-          >
-            <div class="container has-text-centered">
-              Click here for a Complete Class List
-              <span class="icon is-pulled-right is-hidden-touch">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              </span>
-            </div>
-          </router-link>
-          <router-link
-            class="button is-fullwidth is-large"
-            to="/careers"
-            style="margin-bottom: 20px"
-          >
-            <div class="container has-text-centered">
-              Click here for Career Clusters
-              <span class="icon is-pulled-right is-hidden-touch">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              </span>
-            </div>
-          </router-link>
-          <router-link class="button is-fullwidth is-large" to="/info">
-            <div class="container has-text-centered">
-              Click here for General Information
-              <span class="icon is-pulled-right is-hidden-touch">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              </span>
-            </div>
-          </router-link>
+          <h1 class="title">Not Found</h1>
         </div>
       </div>
       <!-- Hero footer: will stick at the bottom -->

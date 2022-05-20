@@ -6,16 +6,24 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0006_auto_20190202_1148'),
+        ("api", "0006_auto_20190202_1148"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Info',
+            name="Info",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('info_name', models.CharField(max_length=100)),
-                ('file_name', models.CharField(max_length=500)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("info_name", models.CharField(max_length=100)),
+                ("file_name", models.CharField(max_length=500)),
             ],
         ),
     ]

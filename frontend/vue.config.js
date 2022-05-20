@@ -1,7 +1,7 @@
-'use strict'
-const path = require('path')
+"use strict";
+const path = require("path");
 
 module.exports = {
-  outputDir: path.resolve(__dirname, './dist'),
-  publicPath: '/static/'
-}
+  outputDir: path.resolve(__dirname, "./dist"),
+  publicPath: "/",
+};

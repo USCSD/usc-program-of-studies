@@ -6,26 +6,34 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0001_initial'),
+        ("api", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Career',
+            name="Career",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('career_name', models.CharField(max_length=100)),
-                ('description', models.CharField(blank=True, max_length=5000)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("career_name", models.CharField(max_length=100)),
+                ("description", models.CharField(blank=True, max_length=5000)),
             ],
         ),
         migrations.RenameField(
-            model_name='class',
-            old_name='career',
-            new_name='careers',
+            model_name="class",
+            old_name="career",
+            new_name="careers",
         ),
         migrations.AddField(
-            model_name='career',
-            name='suggested_classes',
-            field=models.ManyToManyField(to='api.Class'),
+            model_name="career",
+            name="suggested_classes",
+            field=models.ManyToManyField(to="api.Class"),
         ),
     ]

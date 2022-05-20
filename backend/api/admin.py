@@ -7,21 +7,21 @@ from django.db import models
 
 
 class ClassAdmin(admin.ModelAdmin):
-    list_display = ('class_name', 'code', 'subject', 'length', 'grade', 'viewable')
-    search_fields = ('class_name', 'code')
-    filter_horizontal = ('careers',)
+    list_display = ("class_name", "code", "subject", "length", "grade", "viewable")
+    search_fields = ("class_name", "code")
+    filter_horizontal = ("careers",)
     formfield_overrides = {
-        models.CharField: {'widget': TextInput(attrs={'size': '70'})},
-        models.TextField: {'widget': Textarea(attrs={'rows': 8, 'cols': 100})},
+        models.CharField: {"widget": TextInput(attrs={"size": "70"})},
+        models.TextField: {"widget": Textarea(attrs={"rows": 8, "cols": 100})},
     }
 
 
 class CareerAdmin(admin.ModelAdmin):
-    search_fields = ('career_name', 'description')
-    filter_horizontal = ('suggested_classes',)
+    search_fields = ("career_name", "description")
+    filter_horizontal = ("suggested_classes",)
     formfield_overrides = {
-        models.CharField: {'widget': TextInput(attrs={'size': '70'})},
-        models.TextField: {'widget': Textarea(attrs={'rows': 8, 'cols': 150})},
+        models.CharField: {"widget": TextInput(attrs={"size": "70"})},
+        models.TextField: {"widget": Textarea(attrs={"rows": 8, "cols": 150})},
     }
 
 
