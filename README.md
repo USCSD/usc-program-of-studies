@@ -125,6 +125,8 @@ DOMAIN=pos.localdomain # Change me
 AUTH_HEADER=HTTP_DJANGOUSER # Must start with `HTTP_`. If the Apache header is `hello`, then the value here must be `HTTP_HELLO`.
 ```
 
+Export the static directory and save it to the host machine: `podman cp pos:/app/frontend/public static` where `pos` is the name of the container.
+
 Run this where the config directory exists and is available for Apache. Make sure that Apache has access to these directories:
 
 ```

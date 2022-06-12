@@ -17,3 +17,4 @@ ENV CONFIG_DIR=/config
 ENV ENV_NAME=production
 RUN env SECRET_KEY="empty" DOMAIN="empty" AUTH_HEADER="empty" python3 manage.py collectstatic
 CMD [ "gunicorn", "project.wsgi" ]
+LABEL org.opencontainers.image.source https://github.com/uscsd/usc-program-of-studies
