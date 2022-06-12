@@ -83,6 +83,9 @@ OIDCProviderMetadataURL https://auth.example.com/.well-known/openid-configuratio
 OIDCClientID program-of-studies
 OIDCClientSecret SETME
 
+# Preserve POST Requests
+OIDCPreservePost On
+
 # OIDCRedirectURI is a vanity URL that must point to a path protected by this module but must NOT point to any content
 OIDCRedirectURI http://pos.localdomain/admin/r
 OIDCCryptoPassphrase SOMETHINGLONGANDSECURE
